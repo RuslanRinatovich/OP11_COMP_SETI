@@ -123,9 +123,9 @@
 В первом видео подробно указано как установить программу.
 Создайте и настройте сети как по образцу из видео 2 и 3
 
-1. [1.Видео уроки Cisco Packet Tracer. Курс молодого бойца. Установка](#https://www.youtube.com/watch?v=sEqQrE38M58&list=PLcDkQ2Au8aVNYsqGsxRQxYyQijILa94T9&index=2)
-2. [2.Видео уроки Cisco Packet Tracer. Курс молодого бойца. Простейшая сеть](#https://www.youtube.com/watch?v=c9TMXiRk3E8&list=PLcDkQ2Au8aVNYsqGsxRQxYyQijILa94T9&index=3)
-3. [3.Видео уроки Cisco Packet Tracer. Курс молодого бойца. Коммутатор](#https://www.youtube.com/watch?v=VZDvaleQB0s&list=PLcDkQ2Au8aVNYsqGsxRQxYyQijILa94T9&index=4)
+1. [1.Видео уроки Cisco Packet Tracer. Курс молодого бойца. Установка](https://www.youtube.com/watch?v=sEqQrE38M58&list=PLcDkQ2Au8aVNYsqGsxRQxYyQijILa94T9&index=2)
+2. [2.Видео уроки Cisco Packet Tracer. Курс молодого бойца. Простейшая сеть](https://www.youtube.com/watch?v=c9TMXiRk3E8&list=PLcDkQ2Au8aVNYsqGsxRQxYyQijILa94T9&index=3)
+3. [3.Видео уроки Cisco Packet Tracer. Курс молодого бойца. Коммутатор](https://www.youtube.com/watch?v=VZDvaleQB0s&list=PLcDkQ2Au8aVNYsqGsxRQxYyQijILa94T9&index=4)
 
 ## Задания
 
