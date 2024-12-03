@@ -136,6 +136,7 @@ VLAN, построенная на портах, применяется в тех
 В результате получаем следующую топологию сети (рис. 1).
 
 ![img_1.png](LAB5/img_1.png)
+
 Рисунок 1 - Топология сети
 
 2. Далее приступаем к соединению между устройствами. 
@@ -200,7 +201,7 @@ Switch#configure terminal
 
 ```
 Switch(config)#vlan 2
-Switch(config-vlan)#name professors
+Switch(config-vlan)#name teachers
 Switch(config-vlan)#exit
 ```
 ![img_9.png](LAB5/img_9.png)
