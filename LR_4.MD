@@ -10,6 +10,8 @@
 
 ---
 
+# [СКАЧАТЬ CISCO](https://drive.google.com/file/d/1-RJz5lQXm8VzllBU_PdR7hPh9steNxr4/view?usp=drive_link)
+
 ## Содержание
 
 1. [Цели работы](#цели-работы)
