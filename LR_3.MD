@@ -116,6 +116,7 @@
    ping yandex.ru
    ping -l 1000 -n 5 google.com
    ```
+> ⚠️ в Astra Linux у команды ping другие параметры. Используйте `ping -s 1000 -c 5 google.com`. (-s размер пакета, -c количество запросов).
 
 3. **`tracert`**  
    ```cmd
@@ -145,6 +146,18 @@
    ```cmd
    hostname
    ```
+
+## Справка
+
+Сводная таблица аналогов в Astra Linux
+|Функция |Команда Windows |Эквивалент в Astra Linux |
+|---|---|---|
+|Просмотр IP |`ipconfig`|`ip addr show` или `ifconfig`|
+|Трассировка маршрута |`tracert`|`traceroute`|
+|Сетевая статистика |`netstat`|`ss`  (рекомендуется) или `netstat`|
+|Таблица ARP |`arp`|`ip neighbor` или `arp`|
+|Имя хоста|`hostname`|`hostname`|
+
 
 Для каждого задания сделайте **скриншот результата** и кратко опишите:
 - Какую команду вы выполняли?
