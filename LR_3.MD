@@ -104,6 +104,12 @@
    ```
    Найдите: IP-адрес, маску, шлюз, MAC-адрес, статус DHCP.
 
+> ⚠️ в Astra Linux аналогом команды ipconfig является **`ip a`**
+```cmd
+  ip a
+```
+
+
 2. **`ping`**  
    ```cmd
    ping 8.8.8.8
@@ -115,6 +121,13 @@
    ```cmd
    tracert yandex.ru
    ```
+> ⚠️ в Astra Linux аналогом команды ipconfig является **`traceroute`**
+
+**`traceroute`**  
+   ```cmd
+   traceroute yandex.ru
+   ```
+
 
 4. **`netstat`**  
    ```cmd
