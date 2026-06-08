@@ -228,6 +228,84 @@ heading.style.backgroundColor = "yellow";
 - Присваиваем свойству `onclick` **функцию** (код, который выполнится по клику).  
 - Внутри функции меняем текст и цвет абзаца.
 
+Понял, спасибо за уточнение. У вас уже есть начало пункта 6 (про `querySelector`). Теперь нужно **дополнить этот же пункт** материалом про поиск элемента по атрибуту `name`, с примерами и двумя способами.
+
+Ниже я пишу **готовый блок текста**, который вы можете вставить **сразу после** существующего абзаца про селекторы `"#myId"`, `".myClass"`, `"p"`.
+
+---
+
+## Дополнение к пункту 6 (вставить после перечисления селекторов)
+
+### 6.2. Поиск элемента по атрибуту `name`
+
+Если элемент имеет атрибут `name` (часто используется в полях ввода, радиокнопках, checkbox), его тоже можно найти из JavaScript.
+
+**Способ 1. `document.getElementsByName()`**
+
+Этот метод возвращает **коллекцию** (псевдомассив) всех элементов с указанным `name`. Даже если элемент один, нужно взять первый по индексу `[0]`.
+
+```javascript
+let элементы = document.getElementsByName("username");
+let первыйЭлемент = элементы[0];   // если элемент точно один
+```
+
+**Способ 2. `document.querySelector()` (рекомендуется)**
+
+Используйте CSS-селектор по атрибуту: `[name="значение"]`.
+
+```javascript
+let элемент = document.querySelector('[name="username"]');
+```
+
+Этот способ короче и единообразен с поиском по `id`, `class`.
+
+#### Пример с полем ввода
+
+```html
+<input type="text" name="phone" placeholder="Введите телефон">
+<button id="showPhoneBtn">Показать номер</button>
+<p id="outputPhone"></p>
+
+<script>
+    let button = document.querySelector("#showPhoneBtn");
+    button.onclick = function() {
+        // Ищем элемент с name="phone"
+        let phoneInput = document.querySelector('[name="phone"]');
+        let result = document.querySelector("#outputPhone");
+        result.textContent = "Вы ввели: " + phoneInput.value;
+    };
+</script>
+```
+
+#### Пример с группой радиокнопок (несколько элементов с одинаковым name)
+
+```html
+<label><input type="radio" name="color" value="red"> Красный</label>
+<label><input type="radio" name="color" value="green"> Зелёный</label>
+<label><input type="radio" name="color" value="blue"> Синий</label>
+<button id="getColorBtn">Выбрать</button>
+
+<script>
+    let btn = document.querySelector("#getColorBtn");
+    btn.onclick = function() {
+        let radios = document.getElementsByName("color");
+        let selectedValue;
+        for (let i = 0; i < radios.length; i++) {
+            if (radios[i].checked) {
+                selectedValue = radios[i].value;
+                break;
+            }
+        }
+        alert("Вы выбрали: " + selectedValue);
+    };
+</script>
+```
+
+**Важно запомнить:**
+- `getElementsByName` всегда возвращает коллекцию (даже если элемент один).
+- `querySelector('[name="..."]')` возвращает первый попавшийся элемент или `null`, если ничего не найдено.
+- Для полей ввода, кнопок, скрытых полей чаще используют `querySelector`. Для групп радиокнопок или чекбоксов удобнее `getElementsByName`.
+
 ---
 
 ## 7. Полный работающий пример (скопируйте и запустите)
