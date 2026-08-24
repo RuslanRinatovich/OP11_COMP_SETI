@@ -68,8 +68,8 @@
 ## 👨‍🏫 Контакты
 
 **Преподаватель:** Сафиулин Руслан Ринатович  
-**Email:** [ваш email]  
-**GitHub:** [ссылка на ваш профиль]
+**мой сайт:** [https://sites.google.com/view/itmagic]  
+**GitHub:** [https://github.com/RuslanRinatovich]
 
 ---
 
