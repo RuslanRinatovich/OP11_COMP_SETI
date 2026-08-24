@@ -584,11 +584,11 @@ flowchart LR
 **Пример схемы:**
 
 ```mermaid
-graph TD
-    R[Router] -->|Wi-Fi| L[Laptop]
-    R -->|Wi-Fi| P[Phone]
-    R -->|Cable| TV[Smart TV]
-    R -->|Wi-Fi| S[Speaker]
+flowchart TD
+    R["Роутер (подключен к Интернету)"] -->|Wi-Fi| L["Ноутбук"]
+    R -->|Wi-Fi| P["Телефон"]
+    R -->|Кабель| TV["Smart TV"]
+    R -->|Wi-Fi| S["Умная колонка"]
 ```
 
 #### Часть 4. Рефлексия (по желанию, для дополнительного балла)
