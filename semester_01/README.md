@@ -61,7 +61,7 @@
 
 | Материал | Ссылка |
 |:---|:---|
-| Cisco Packet Tracer | [Скачать]([https://www.netacad.com/courses/packet-tracer](https://drive.google.com/file/d/1-RJz5lQXm8VzllBU_PdR7hPh9steNxr4/view) |
+| Cisco Packet Tracer | [Скачать](https://www.netacad.com/courses/packet-tracer](https://drive.google.com/file/d/1-RJz5lQXm8VzllBU_PdR7hPh9steNxr4/view) |
 | Шпаргалка по командам Cisco | [Смотреть](resources/cisco_commands.md) |
 | Горячие клавиши CPT | [Смотреть](resources/cpt_shortcuts.md) |
 
