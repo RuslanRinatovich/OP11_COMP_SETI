@@ -601,7 +601,7 @@ flowchart TD
 ### 🔗 Ссылки для студентов
 
 - **Google Форма для ДЗ:** [вставить ссылку]
-- **Google Форма для теста:** [вставить ссылку]
+- **Google Форма для теста:** [255 группа](https://forms.gle/dcsdUh8RG9kWMSpz5) [257 группа](https://forms.gle/YgLq7Z4Zi7Q69Pk36) 
 
 ---
 
