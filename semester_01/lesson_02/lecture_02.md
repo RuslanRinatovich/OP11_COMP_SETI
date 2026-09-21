@@ -114,15 +114,26 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    T1[Терминатор] --- PC1[PC 1]
-    PC1 --- PC2[PC 2]
-    PC2 --- PC3[PC 3]
-    PC3 --- PC4[PC 4]
-    PC4 --- SRV[Сервер]
-    SRV --- T2[Терминатор]
-    
+    T1[Терминатор] --- H1[ ]
+    H1 --- H2[ ]
+    H2 --- H3[ ]
+    H3 --- H4[ ]
+    H4 --- H5[ ]
+    H5 --- T2[Терминатор]
+
+    PC1[PC 1] --- H1
+    PC2[PC 2] --- H2
+    PC3[PC 3] --- H3
+    PC4[PC 4] --- H4
+    SRV[Сервер] --- H5
+
     style T1 fill:#ff6b6b,color:#fff
     style T2 fill:#ff6b6b,color:#fff
+    style H1 fill:#000,color:#fff
+    style H2 fill:#000,color:#fff
+    style H3 fill:#000,color:#fff
+    style H4 fill:#000,color:#fff
+    style H5 fill:#000,color:#fff
     style PC1 fill:#4d96ff,color:#fff
     style PC2 fill:#4d96ff,color:#fff
     style PC3 fill:#4d96ff,color:#fff
