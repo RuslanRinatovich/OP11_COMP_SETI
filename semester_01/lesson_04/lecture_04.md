@@ -403,7 +403,8 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    subgraph CLIENT["Ваш компьютер (отправитель)"]
+    subgraph CLIENT["💻 Ваш компьютер (отправитель)"]
+        direction TB
         B["🌐 Браузер<br/>(Прикладной)"]
         T["📦 TCP<br/>(Транспортный)"]
         I["📮 IP<br/>(Межсетевой)"]
@@ -418,7 +419,10 @@ flowchart TD
     INTERNET --> R2["Маршрутизатор<br/>(L3)"]
     R2 --> SW2["Коммутатор<br/>(L2)"]
     
-    SW2 --> subgraph SERVER["Сервер (получатель)"]
+    SW2 --> N2
+    
+    subgraph SERVER["🖥️ Сервер (получатель)"]
+        direction TB
         N2["🔌 Ethernet<br/>(Интерфейсы)"]
         I2["📮 IP<br/>(Межсетевой)"]
         T2["📦 TCP<br/>(Транспортный)"]
@@ -427,6 +431,8 @@ flowchart TD
         N2 --> I2 --> T2 --> B2
     end
     
+    style CLIENT fill:#e6f3ff
+    style SERVER fill:#e6ffe6
     style B fill:#ff6b6b,color:#fff
     style T fill:#6bcb77,color:#fff
     style I fill:#4d96ff,color:#fff
@@ -435,6 +441,11 @@ flowchart TD
     style T2 fill:#6bcb77,color:#fff
     style I2 fill:#4d96ff,color:#fff
     style N2 fill:#34495e,color:#fff
+    style SW1 fill:#9b59b6,color:#fff
+    style SW2 fill:#9b59b6,color:#fff
+    style R1 fill:#ff9f43,color:#fff
+    style R2 fill:#ff9f43,color:#fff
+    style INTERNET fill:#4d96ff,color:#fff
 ```
 
 #### Что происходит на каждом этапе
